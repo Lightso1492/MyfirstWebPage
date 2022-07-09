@@ -47,14 +47,18 @@ body {
   display:inline-block;
   border-bottom: 2px solid #16AE85;
 }
+.WingMain {
+  z-index: 0;
+  background-image: img src="images/wing_Main.png";
+}
 #wing_MainArea {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  "WingMain"
   "Lewis K Mitchell"
-  "UX/UI Designer"; 
+  "UX/UI Designer"
+  "herophoto"; 
 }
 .wing_MainText1 {
   font-family: "Exo Light", Arial;
@@ -62,6 +66,7 @@ body {
   font-size: 20px;
   text-align:left;
   margin-bottom: 0px;
+  z-index: 1;
 }
 .wing_MainText2 {
   font-family: "Exo Medium", Arial;
